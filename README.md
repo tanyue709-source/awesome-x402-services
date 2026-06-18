@@ -26,6 +26,28 @@
 
 ---
 
+### 2. Suede AI Agent
+- **Description**: Rights-aware music/video/IP generation and analysis API with programmable-IP provenance and licensing workflows.
+- **Endpoint**: `https://app.suedeai.ai/agent/generate`
+- **Discovery**: `https://app.suedeai.ai/.well-known/x402`
+- **Price**: starts at **0.003 USDC** per call; music generation **0.20 USDC**, video generation **1.50 USDC** (x402 protocol)
+- **Capabilities**: `music_generation`, `video_generation`, `rights_lookup`, `audio_analysis`, `programmable_ip`, `x402_payment`
+- **Status**: ✅ **Active & Verified**
+- **Author**: Suede AI
+- **Repository**: [GitHub](https://github.com/Suede-AI)
+
+#### 📊 How it works
+1. Discover paid resources at `https://app.suedeai.ai/.well-known/x402`.
+2. Choose a resource such as full-length music generation, video generation, rights lookup, or audio analysis.
+3. Send the request with a valid x402 payment proof and receive the generated media or metadata response.
+
+#### 💰 Payment
+- **Currency**: USDC (Base Chain)
+- **Payee**: Published per resource in the x402 discovery document
+- **Protocol**: x402 (HTTP 402 Payment Required)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
