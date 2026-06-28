@@ -26,7 +26,32 @@
 
 ---
 
+### 2. 400860 Radar x402 API
+- **Description**: x402-native API tools for agent payment safety, spend firewall checks, seller checkout repair, x402 market intel, and paid MCP launch readiness.
+- **Endpoint**: `https://api.400860.xyz/v1/agent/security-policy-pack`
+- **Discovery**: `https://api.400860.xyz/.well-known/x402`
+- **OpenAPI**: `https://api.400860.xyz/openapi.json`
+- **llms.txt**: `https://api.400860.xyz/llms.txt`
+- **Price**: **0.01 USDC** starting paid call on Base via x402.
+- **Capabilities**: `agent_security_policy`, `spend_firewall`, `seller_checkout_repair`, `x402_market_intel`, `paid_mcp_launch`
+- **Status**: **Public endpoint live**
+- **Author**: 400860 operator
+- **Repository**: [Discovery Kit](https://github.com/go165/400860-x402-discovery-kit)
+
+#### How it works
+1. Read the x402 discovery manifest or OpenAPI spec.
+2. Request a free quote/preview endpoint, or call the protected route to receive the required x402 payment details.
+3. Send the paid request with a valid x402 payment header to receive the full policy, repair, or launch-readiness output.
+
+#### Payment
+- **Currency**: USDC (Base Chain)
+- **Protocol**: x402 (HTTP 402 Payment Required)
+- **Manifest**: `https://api.400860.xyz/.well-known/x402`
+
+---
+
 ## 🚀 Add Your Service
+
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
 2. Submit a Pull Request with your service details in the format above.
