@@ -30,7 +30,7 @@
 - **Description**: Trust scoring for AI agents on Solana. Verify agent wallet reputation before x402 micropayments.
 - **Endpoint**: `https://intel.twzrd.xyz/mcp` (Streamable HTTP MCP)
 - **Discovery**: `https://intel.twzrd.xyz/mcp`
-- **Price**: Free: `score_agent`, `preflight_check` | Paid: `get_trust_receipt` (x402 micropayment)
+- **Price**: Free: `score_wallet_for_intel`, `get_readiness_card_tool` | Paid: `GET /v1/intel/trust/{pubkey}` (x402 micropayment)
 - **Capabilities**: `agent_trust_scoring`, `x402_verification`, `solana_wallet_identity`
 - **Status**: ✅ **Active & Verified**
 - **Config**: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
