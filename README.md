@@ -26,6 +26,18 @@
 
 ---
 
+### 2. agent-dust Oracles
+- **Description**: Tiny x402-paid oracles for agents on Base and Solana mainnet: wallet preflight, rent recovery, SPL token safety, x402 echo, facilitator health, payment-required lint, funding rates, and consolidated wallet reports.
+- **Endpoint**: `https://home.chrz.dev/agent-dust/`
+- **Discovery**: `https://home.chrz.dev/openapi.json`
+- **Price**: **0.005-0.10 USDC** per call (x402 protocol)
+- **Capabilities**: `wallet_preflight`, `solana_rent_recovery`, `token_safety`, `x402_echo`, `x402_facilitators`, `x402_lint`, `funding_rates`, `wallet_report`
+- **Status**: Active
+- **Author**: k2riddim
+- **Repository**: [GitHub](https://github.com/k2riddim/agent-dust)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
