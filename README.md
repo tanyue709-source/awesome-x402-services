@@ -26,6 +26,28 @@
 
 ---
 
+### 2. Clear
+- **Description**: Fetch a public URL as markdown for AI agents. Fail is free.
+- **Endpoint**: `https://clear-agent-fetch.fly.dev/v1/fetch`
+- **Discovery**: `https://clear-agent-fetch.fly.dev/.well-known/x402`
+- **Price**: **0.005 USDC** per successful call (x402 protocol)
+- **Capabilities**: `url_fetch`, `markdown`, `x402_payment`
+- **Status**: ✅ **Active**
+- **Author**: curyous
+- **Repository**: [GitHub](https://github.com/curyous/clear-agent-fetch)
+
+#### 📊 How it works
+1. POST `{"url":"https://example.com"}` to `/v1/fetch`.
+2. Unpaid calls return HTTP 402 with x402 payment requirements.
+3. After USDC payment on Base, receive the page as markdown.
+
+#### 💰 Payment
+- **Currency**: USDC (Base Chain)
+- **Wallet**: `0x2382EF343ba76a6D56efC8C04920d7df2F98A54D`
+- **Protocol**: x402 (HTTP 402 Payment Required)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
