@@ -26,6 +26,28 @@
 
 ---
 
+### 2. Base toolbox
+- **Description**: Uniswap v3 swap preflight, leftover allowances, tx explain, and transfer check on Base. Also $0.01 Base token price, gas, and ENS helpers.
+- **Endpoint**: `https://basetoolbox.cartonpliant.workers.dev/v1/preflight`
+- **Discovery**: `https://basetoolbox.cartonpliant.workers.dev/.well-known/x402.json`
+- **Price**: **0.10 USDC** per DeFi check (`/v1/preflight`, `/v1/allowances`, `/v1/explain`, `/v1/send-check`); **0.01 USDC** for `/v1/base-price`, `/v1/base-gas`, `/v1/base-ens`. `GET /v1/constants` is free.
+- **Capabilities**: `uniswap_v3_preflight`, `allowance_check`, `tx_explain`, `base_ens`, `x402_payment`
+- **Status**: ✅ **Active**
+- **Author**: cartonpliant
+- **Skill**: [ClawHub](https://clawhub.ai/cartonpliant/skills/basetoolbox)
+
+#### 📊 How it works
+1. POST JSON to a paid route (or GET `/v1/constants` for free Base addresses).
+2. Unpaid calls return HTTP 402 with `accepts[]` (USDC on Base).
+3. Pay via x402; receive the check/simulation.
+
+#### 💰 Payment
+- **Currency**: USDC (Base Chain)
+- **Wallet**: `0xc361074554c13EEE51feab63ED180EF6b9911B3e`
+- **Protocol**: x402 (HTTP 402 Payment Required)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
