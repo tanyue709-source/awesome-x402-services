@@ -29,9 +29,9 @@
 
 ### 2. Veriton HTML→JSON Agent API
 - **Description**: Metered HTML→structured JSON for agents (headings, links, meta, selector extract). Prepaid USDC credits on Base + HTTP 402 x402 accepts[].
-- **Endpoint**: `https://tue-alabama-married-wonder.trycloudflare.com/v1/html-to-json`
-- **Discovery**: `https://tue-alabama-married-wonder.trycloudflare.com/.well-known/x402`
-- **OpenAPI**: `https://tue-alabama-married-wonder.trycloudflare.com/v1/openapi.json`
+- **Endpoint**: `https://seed-trek-trainers-ross.trycloudflare.com/v1/html-to-json`
+- **Discovery**: `https://seed-trek-trainers-ross.trycloudflare.com/.well-known/x402`
+- **OpenAPI**: `https://seed-trek-trainers-ross.trycloudflare.com/v1/openapi.json`
 - **Docs**: https://veriton-dev.github.io/veriton-micro-dev/api/
 - **Price**: **$0.02 USDC** per html-to-json call · **$0.05** fetch-to-json · min pack **$0.50**
 - **Free demo**: `GET /v1/demo/html-to-json?html=`
