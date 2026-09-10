@@ -1,3 +1,5 @@
+- [Gurus Hubmart](https://agents.xrpcloud.live/) - XRPL Mainnet x402 marketplace for autonomous agents: transaction verification, reconciliation, repeat payer, treasury CRM. [OpenAPI](https://agents.xrpcloud.live/marketplace/openapi.json) | [MCP](https://agents.xrpcloud.live/marketplace/x402_mcp)
+
 # 🍎 Awesome x402 AI Agent Services
 
 > A curated list of production-ready AI Agent services that accept x402 payments.
