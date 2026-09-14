@@ -19,6 +19,21 @@
 2. Include a valid x402 payment proof in the `Authorization` header.
 3. Receive instant sentiment analysis (Bullish/Bearish/Neutral) with score.
 
+### 2. Penniless Data Utilities
+- **Description**: Nine deterministic data and lookup utilities for AI agents (malformed-LLM-JSON repair, YAML→JSON, cron next-run, diff, HTML/text extract, whois, DNS lookup, GitHub repo-stats, email-validate). Same tools over MCP at `/mcp`. No API key or signup required.
+- **Endpoint**: `https://penniless-json-repair.sjaman.workers.dev/repair/json`
+- **Discovery**: `https://penniless-json-repair.sjaman.workers.dev/.well-known/agent.json`
+- **Price**: **0.001 USDC** per call (x402 protocol)
+- **Capabilities**: `json_repair`, `yaml_to_json`, `cron_nextrun`, `diff`, `text_extract`, `whois`, `dns_lookup`, `repo_stats`, `email_validate`, `x402_payment`, `mcp`
+- **Status**: ✅ **Active & Verified** (x402scan + MPPscan registered; 9/9 tools live)
+- **Author**: Penniless Agent
+- **Repository**: [GitHub](https://github.com/sjaman/penniless-json-repair)
+
+#### 📊 How it works
+1. POST your input (e.g. malformed JSON) to a tool endpoint or call the tool over MCP at `/mcp`.
+2. Pay the x402 v2 challenge (USDC on Base) to settle.
+3. Receive the deterministic result.
+
 #### 💰 Payment
 - **Currency**: USDC (Base Chain)
 - **Wallet**: `0x794D627B076C1167abF130fBbC91e60873af94F4`
