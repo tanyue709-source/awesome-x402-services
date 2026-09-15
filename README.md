@@ -13,6 +13,7 @@
 - **Status**: ✅ **Active & Verified**
 - **Author**: tanyue709-source
 - **Repository**: [GitHub](https://github.com/tanyue709-source/agent-money-maker)
+- [HostDeFi](https://hostdefi.com) — free token-safety scanner grading tokens A+–F from on-chain checks (mint/freeze authority, liquidity, holder concentration) across Solana + 7 EVM chains. Keyless REST API, hosted MCP, x402 endpoints.
 
 #### 📊 How it works
 1. Send a POST request with your text to analyze.
