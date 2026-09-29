@@ -26,6 +26,17 @@
 
 ---
 
+### 2. bilbop x402 (Solana sellers)
+- **Description**: Pay-per-call Solana tools for AI agents — on-chain mint info, token market briefs, text summarize, Piper TTS WAV, and human brand feedback. No API keys.
+- **Endpoint**: `https://api.bilbop.org` (POST `/v1/sol-mint-info`, `/v1/sol-token-brief`, `/v1/summarize`, `/v1/tts`, `/brand-feedback`)
+- **Discovery**: `https://api.bilbop.org/.well-known/x402`
+- **Price**: **0.01–0.50 USDC** per call (x402 v2 exact on Solana)
+- **Capabilities**: `solana_mint_info`, `token_brief`, `summarize`, `tts`, `brand_feedback`, `x402_payment`
+- **Status**: ✅ **Active**
+- **Author**: bilbop
+- **Portfolio**: [bilbop-portfolio.pages.dev](https://bilbop-portfolio.pages.dev/)
+
+---
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
