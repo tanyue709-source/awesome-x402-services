@@ -26,6 +26,14 @@
 
 ---
 
+### 2. Ossye x402 Endpoint Factory
+- **Description**: Spec-driven factory serving 136 pay-per-call crypto/on-chain data endpoints from one JSON spec: GoPlus token/NFT/approval/address/dapp security, DeFiLlama TVL/yields/stablecoins/hacks/raises, CoinGecko, Binance market data, DexScreener, mempool.space Bitcoin, plus 9 raw JSON-RPC methods fanned out across 8 EVM chains.
+- **Endpoint**: see `docs/X402_SERVICE.md` — live base URL rotates (free tunnel), doc auto-updates: `https://github.com/Ossye/economic-opportunity-agent/blob/codex/b7-world-economic-event-search/docs/X402_SERVICE.md`
+- **Price**: **$0.01 USDC** per call on Base mainnet via PayAI facilitator (x402 v1, EIP-3009)
+- **Capabilities**: `token_security`, `tvl_data`, `market_data`, `rpc_passthrough`, `x402_payment`
+- **Status**: ✅ **Active & Verified** — settlement confirmed on-chain (Base tx `0x13f76f...`)
+- **Source**: `benchmarks/x402_demo/` in the same repo (endpoints.json spec + service_factory.py)
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
