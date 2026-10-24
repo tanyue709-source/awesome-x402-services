@@ -26,6 +26,28 @@
 
 ---
 
+### 2. Open Rails Data Agent
+- **Description**: Pay-per-call Celo blockchain data agent: latest block, gas price, native/token balances, tx + receipt lookups (eth_* JSON-RPC), ERC-8004 agent identity. 24/7 Cloudflare Worker.
+- **Endpoint**: `https://open-rails-data-agent.shablony-pro.workers.dev/celo/block` (7 routes total)
+- **Discovery**: `https://open-rails-data-agent.shablony-pro.workers.dev/.well-known/x402`
+- **Price**: **0.0005 USDC** per call (x402 protocol, v2)
+- **Capabilities**: `celo_data`, `blockchain_rpc`, `erc8004_identity`, `x402_payment`
+- **Status**: ✅ **Active & Verified** (listed on agent402.tools, health 1, 7 routes routable)
+- **Author**: Alex20Sas12
+- **Repository**: [GitHub](https://github.com/Alex20Sas12/x402-open-rails-agent)
+
+#### 📊 How it works
+1. POST a JSON-RPC-style query (e.g. `{"height": 20000000}`) to a `/celo/*` route.
+2. Unpaid calls get HTTP 402 with an x402 v2 challenge (USDC/USDT on Celo, eip155:42220).
+3. Retry with `X-PAYMENT` header -> instant on-chain data response.
+
+#### 💰 Payment
+- **Currency**: USDC (Celo, eip155:42220)
+- **Wallet**: `0x5a8DbD4788584f9C4B59eB64087a1A18fc2f7952`
+- **Protocol**: x402 (HTTP 402 Payment Required, version 2)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
