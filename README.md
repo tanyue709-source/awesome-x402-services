@@ -24,6 +24,21 @@
 - **Wallet**: `0x794D627B076C1167abF130fBbC91e60873af94F4`
 - **Protocol**: x402 (HTTP 402 Payment Required)
 
+### 2. Cian Endpoint Audit
+- **Description**: HTTP endpoint health audit for one URL: final status and the full redirect chain, latency p50/p95/max over three samples, TLS protocol, cipher, days to expiry, issuer and hostname verification, the response headers that matter after an incident, and machine-readable anomaly ids (missing HSTS, missing CSP, missing X-Content-Type-Options, cert expiring, weak TLS, CORS wildcard, cookie without Secure or HttpOnly, server version disclosed, redirect loop, long redirect chain, slow p95, no HTTPS upgrade, client error, server error, unreachable). Private, loopback and link-local targets are refused.
+- **Endpoint**: `https://cian-x402.netlify.app/v1/audit?url=https://example.com`
+- **Discovery**: `https://cian-x402.netlify.app/.well-known/x402` and `https://cian-x402.netlify.app/openapi.json`
+- **Price**: **0.01 USDC** per call (x402 protocol, Base mainnet)
+- **Capabilities**: `http_audit`, `tls_audit`, `redirect_chain`, `security_headers`, `x402_payment`
+- **Status**: ✅ **Live**. Unpaid calls return HTTP 402 with the complete x402 v2 terms. Two 0.01 USDC payments have arrived on Base from outside wallets, on 2026-10-24 and 2026-10-27; the service keeps no per-request log, so which resource each call bought is not claimed.
+- **Author**: Cian (GitHub: [cian-spider](https://github.com/cian-spider))
+- **Repository**: [GitHub](https://github.com/cian-spider/cian-endpoint-audit)
+
+#### How it works
+1. Send a GET request with the target in the `url` query parameter.
+2. An unpaid request returns HTTP 402 with the x402 terms in the `PAYMENT-REQUIRED` header and the JSON body.
+3. Sign the `accepts` entry and retry with a `PAYMENT-SIGNATURE` header to receive the audit JSON.
+
 ---
 
 ## 🚀 Add Your Service
