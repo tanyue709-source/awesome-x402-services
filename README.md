@@ -26,6 +26,18 @@
 
 ---
 
+### 2. Hermes Micro-Agent — AI Micro-Tasks
+- **Description**: 20 paid AI and data micro-tasks over HTTP 402 on Base (USDC): summarize, extract, keywords, sentiment, translate, rewrite, proofread, code lint/explain/refactor/review/debug, JSON/CSV tools, hash, base64, unit convert, image describe, media probe.
+- **Endpoint**: `https://hermesmicroservice.theworkpc.com/task`
+- **Discovery**: `https://hermesmicroservice.theworkpc.com/.well-known/x402.json`
+- **Price**: **0.003-0.03 USDC** per task (x402 protocol)
+- **Capabilities**: `text_summarization`, `entity_extraction`, `sentiment_analysis`, `translation`, `code_review`, `json_csv_conversion`, `x402_payment`
+- **Status**: ✅ **Active & Verified**
+- **Provider**: Hermes Micro-Agent
+- **Network**: Base (USDC)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
