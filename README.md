@@ -26,6 +26,18 @@
 
 ---
 
+### 2. AuthiChain Signal
+- **Description**: Ranked Base launchpad tape (last rejections, LP, bytecode) as paper market data for agents. Unpaid GET returns HTTP 402.
+- **Endpoint**: `https://signal.authichain.com/api/x402/discovery`
+- **Discovery**: `https://signal.authichain.com/.well-known/x402.json`
+- **Price**: **0.01 USDC** per call (x402 v2 exact on Base)
+- **Capabilities**: `market_data`, `base_launchpad`, `x402_payment`
+- **Status**: ✅ **Active**
+- **Offer card**: https://signal.authichain.com/offer
+- **Author**: AuthiChain
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
