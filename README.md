@@ -26,6 +26,14 @@
 
 ---
 
+
+### 2. ParsNegar (agent-fleet) - Iranian and Persian Data Agent
+- **Description**: Iranian and Persian verification and data tools for agents: national code, bank card and Sheba (IBAN) checks, mobile number to operator and province, postal code, licence plate, passport MRZ check digits, Jalali and lunar Hijri dates, RTL text safety.
+- **Endpoint**: `https://agent-fleet-ppqpwu.camelai.app/mcp` (streamable HTTP, MCP) and `https://agent-fleet-ppqpwu.camelai.app/do`
+- **Discovery**: `https://agent-fleet-ppqpwu.camelai.app/.well-known/agent-card.json` and `https://agent-fleet-ppqpwu.camelai.app/openapi.json`
+- **Price**: **0.002 - 0.02 USDC** per call (x402 on Solana or Base); 59 of 76 tools free, three free calls a day per tool per caller
+- **Capabilities**: `iran_national_code`, `iran_card`, `iran_sheba`, `iran_mobile`, `iran_postal_code`, `iran_plate`, `mrz_check`, `jalali_date`, `persian_text`
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
