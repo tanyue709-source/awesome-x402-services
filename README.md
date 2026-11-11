@@ -26,6 +26,18 @@
 
 ---
 
+### 2. Trading Signals Toolkit
+- **Description**: Event-risk flags for ES futures, SEC Form 4 insider-buy alerts, and short AI trade briefs, built for agents that need context before a trade.
+- **Endpoint**: `https://signals.incomefather.com/futures/event-gate`
+- **Discovery**: `https://signals.incomefather.com/.well-known/x402`
+- **Price**: **0.01 USDC** per call on this route (other routes priced individually; USDC on Base or Solana)
+- **Capabilities**: `event_risk`, `insider_filings`, `trade_briefs`, `x402_payment`
+- **Status**: ✅ Live (returns HTTP 402 with payment requirements)
+- **Author**: gdietsch (disclosure: I maintain this service)
+- **Repository**: [GitHub](https://github.com/gdietsch/trading-signals-examples)
+
+---
+
 ## 🚀 Add Your Service
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
