@@ -24,6 +24,26 @@
 - **Wallet**: `0x794D627B076C1167abF130fBbC91e60873af94F4`
 - **Protocol**: x402 (HTTP 402 Payment Required)
 
+### 2. Counterparty Check
+- **Description**: Decision-ready due diligence for any Base address. Free summary (3/day/IP), paid machine tiers, and a $5 dossier with a send/review/block verdict, risk score, evidence coverage and a signed EIP-712 receipt.
+- **Endpoint**: `https://places-dentists-delegation-commit.trycloudflare.com/v1/check?address=0x0000000000000000000000000000000000000000&tier=deep`
+- **Discovery**: `https://places-dentists-delegation-commit.trycloudflare.com/.well-known/x402`
+- **Price**: free basic summary (3/day/IP); **0.05 USDC** basic, **0.15 USDC** standard, **1.00 USDC** deep; **5.00 USDC** dossier (`/v1/dossier`)
+- **Capabilities**: `wallet_due_diligence`, `risk_score`, `base`, `x402_payment`
+- **Status**: ✅ **Active** — unpaid requests return a valid x402 402 challenge
+- **Author**: ccheckx402
+- **Repository**: [GitHub](https://github.com/ccheckx402/counterparty-check)
+
+#### 📊 How it works
+1. Call the endpoint with a Base address; the unpaid request returns an x402 challenge with the price and `payTo`.
+2. Retry with an x402 payment proof.
+3. Receive structured JSON: contract flag, balance, nonce, risk score, reasons and data-gap manifest; the deep tier adds a report hash and signed-attestation placeholder.
+
+#### 💰 Payment
+- **Currency**: USDC (Base Chain)
+- **Wallet**: returned as `payTo` in the x402 402 response
+- **Protocol**: x402 (HTTP 402 Payment Required), v2 and v1 compatible
+
 ---
 
 ## 🚀 Add Your Service
