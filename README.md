@@ -25,10 +25,10 @@
 - **Protocol**: x402 (HTTP 402 Payment Required)
 
 ### 2. Counterparty Check
-- **Description**: Decision-ready due diligence for any Base address. Free summary (3/day/IP), paid machine tiers, and a $5 dossier with a send/review/block verdict, risk score, evidence coverage and a signed EIP-712 receipt.
-- **Endpoint**: `https://places-dentists-delegation-commit.trycloudflare.com/v1/check?address=0x0000000000000000000000000000000000000000&tier=deep`
-- **Discovery**: `https://places-dentists-delegation-commit.trycloudflare.com/.well-known/x402`
-- **Price**: free basic summary (3/day/IP); **0.05 USDC** basic, **0.15 USDC** standard, **1.00 USDC** deep; **5.00 USDC** dossier (`/v1/dossier`)
+- **Description**: Decision-ready due diligence for any Base address. Free summary (20/hour/IP), paid machine tiers, and a $5 dossier with a send/review/block verdict, risk score, evidence coverage and a SHA-256 report hash.
+- **Endpoint**: `https://app-546c577baf344139d16d.x402-hosting.com/v1/check?address=0x0000000000000000000000000000000000000000&tier=deep`
+- **Discovery**: `https://app-546c577baf344139d16d.x402-hosting.com/.well-known/x402`
+- **Price**: free basic summary (20/hour/IP); **0.15 USDC** standard, **1.00 USDC** deep; **5.00 USDC** dossier (`/v1/dossier`)
 - **Capabilities**: `wallet_due_diligence`, `risk_score`, `base`, `x402_payment`
 - **Status**: ✅ **Active** — unpaid requests return a valid x402 402 challenge
 - **Author**: ccheckx402
@@ -37,7 +37,7 @@
 #### 📊 How it works
 1. Call the endpoint with a Base address; the unpaid request returns an x402 challenge with the price and `payTo`.
 2. Retry with an x402 payment proof.
-3. Receive structured JSON: contract flag, balance, nonce, risk score, reasons and data-gap manifest; the deep tier adds a report hash and signed-attestation placeholder.
+3. Receive structured JSON: contract flag, balance, nonce, risk score, reasons and data-gap manifest; the deep tier adds a SHA-256 report hash (no signed attestation is claimed).
 
 #### 💰 Payment
 - **Currency**: USDC (Base Chain)
