@@ -8,8 +8,8 @@
 - **Description**: Real-time crypto market sentiment analysis API. 24/7 automated operation.
 - **Endpoint**: `https://agent-money-maker.onrender.com/api/v1/sentiment`
 - **Discovery**: `https://agent-money-maker.onrender.com/.well-known/agent-discovery.json`
-- **Price**: **0.1 USDC** per call (x402 protocol)
-- **Capabilities**: `sentiment_analysis`, `crypto_market`, `x402_payment`
+- **Price**: **0.005-0.05 USDC** per call (x402 HTTP 402, USDC on Base); streaming 0.0002 USDC/s
+- **Capabilities**: `solana_token_risk` (0.005), `evm_gas_rpc_pulse` (0.005), `stellar_account_health` (0.005), `quantum_qubo_solver` (0.05), `quantum_stream_session` (0.0002/s), `tx_simulate_antihoneypot` (0.02), `code_sandbox` (0.02)
 - **Status**: ✅ **Active & Verified**
 - **Author**: tanyue709-source
 - **Repository**: [GitHub](https://github.com/tanyue709-source/agent-money-maker)
@@ -30,6 +30,15 @@
 Want to add your x402 agent service here?
 1. Ensure your service is public and supports x402.
 2. Submit a Pull Request with your service details in the format above.
+
+### 2. Chain Hunter On-Chain Oracle (chain_hunter)
+- **Description**: On-chain data, defensive code review and light compute for autonomous agents, including two NVIDIA NIM-backed services: defensive code review and verified code fix.
+- **Endpoint**: `https://pfq-opencode-wr96rj6p4xwwh59v-8001.app.github.dev`
+- **Discovery**: `https://pfq-opencode-wr96rj6p4xwwh59v-8001.app.github.dev/.well-known/x402.json`
+- **Price**: **0.01-0.15 USDC** per call (x402 HTTP 402, USDC on Base); streaming 0.0005 USDC/s
+- **Capabilities**: `defensive_code_review` (0.15), `verified_code_fix` (0.10), `quantum_qubo_solver` (0.08), `tx_simulate_antihoneypot` (0.03), `code_sandbox` (0.03), `solana_token_risk` (0.01), `evm_gas_rpc_pulse` (0.01), `stellar_account_health` (0.01), `quantum_stream_session` (0.0005/s)
+- **Status**: Active & Verified - all 9 services return HTTP 402 with a matching amount (2026-11-19)
+- **Author**: IVANLI2412
 
 ---
 
